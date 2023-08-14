@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal website - Bijay koirala</title>
+
+    <!--font selecting: Ysabeau SC-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ... Your existing CSS rules ... */
+
+    /* Media Query for Small Screens (e.g., Mobile Phones) */
+    @media (max-width: 768px) {
+        /* Adjust styles for smaller screens */
+        body {
+            font-size: 14px;
+        }
+        /* Add more responsive styles as needed */
+    }
+
+    /* Media Query for Medium Screens (e.g., Tablets) */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        /* Adjust styles for medium-sized screens */
+        body {
+            font-size: 16px;
+        }
+        /* Add more responsive styles as needed */
+    }
+
+    /* Media Query for Large Screens (e.g., Desktops) */
+    @media (min-width: 1025px) {
+        /* Adjust styles for larger screens */
+        body {
+            font-size: 18px;
+        }
+        /* Add more responsive styles as needed */
+    }
+        
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Ysabeau SC' , sans-serif;
+        }
+        body
+        {
+            background-color: #87ace8;
+            color: black;
+            line-height: 1.6;
+        }
+        nav
+        {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: #49474771;
+
+            /* fixing the nav bar */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure the navigation stays on top */
+        }
+        nav ul
+        {
+            display: flex;
+            justify-content: center;
+           
+        }
+        nav ul li
+        {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a
+        {
+            text-decoration: none;
+           color: white;
+        }
+        nav ul li a:hover
+        {  
+           color: rgb(109, 97, 97);
+           font-size: 1.3rem;
+        }
+        main
+        {
+            margin-top: 60px; /* Adjust the value based on your header's height */
+        }
+        main hr
+        {
+            margin: 40px 84px;
+    
+        }
+        main .leftSection a
+        {
+            text-decoration: none;
+            background-color: rgb(106, 124, 141);
+            color: bisque;
+        }
+        /*there is a class left for which we use .left*/
+        .left
+        {
+            font-size: 1.3rem;
+        }
+        .firstSection
+        {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+            margin: 100px;
+        }
+        .firstSection > div
+        {
+            width: 30%;
+        }
+        .leftSection
+        {
+            font-size: 3rem;
+            margin: 10px 0px;
+        }
+        /* .rightSection
+        {
+        }
+         */
+        .rightSection img
+        {
+            width: 80%;
+        }
+        .secondSection
+        {
+            
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .text-blue
+        {
+            color: #153050; 
+            /* service,offer,contact me all heading in scrolling page */
+        }
+        .box
+         {
+            /* all the description written related to the nav bar elements */
+            background-color: rgba(166, 207, 219, 0.829);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+         /* Style the sections */
+         .secondSection {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .secondSection h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .secondSection p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        /* css for footer section */
+        footer
+        {
+            background-color: #132233;
+            padding: 20px 0; /* Add padding for spacing */
+            color: rgb(112, 108, 108); /* Set text color for better visibility */
+        }
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none; /* Remove the bullets */
+    padding: 5px 0; /* Add padding for spacing */
+}
+
+footer ul li {
+    margin: 0 25px; /* Adjust margin for spacing between items */
+}
+
+/* footer ul li a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+} */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Bijay Personal Websites</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#jailbreak">Jailbreak Tweaks</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#hire">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--main work of website starts from here-->
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hey, budyy !</div>
+                <div>I am your ______ .</div>
+                <div><a href="resume.pdf" download>Download my Resume</a></div>
+            </div>
+            <div class="rightSection">
+                <img src="icon.png" alt="icon pic ">
+            </div>
+        </section>
+        <!-- hr gives line -->
+        <hr border="1px" color="#5c687a">
+        <!-- section.secondSection -->
+        <section id="projects" class="section">
+            <h1 class="text-blue">Some projects on which I am currently working :</h1>
+            <div class="box">
+                <h1>Projects</h1>
+                <div class="box">
+                    <div><ul>
+                        <li>Personal website building</li>
+                        <li>PHP CURD</li>
+                        <li>Forms</li>
+                    </ul></div>
+                </div>
+            </div>
+        </section>
+        <section id="jailbreak" class="section">
+            <h1 class="text-blue">Jailbreak tweaks</h1>
+            <div class="box">
+                <div class="box">
+                    Some Jailbreaked tweaks are :
+                <ui>
+                    <li><a href="https://github.com/palera1n/palera1n">Jailbreak main website</a></li>
+                    <li><a href="https://www.reddit.com/r/Jailbreak__tweaks/">Reddit community to discuss</a></li>
+                </ui>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <h1 class="text-blue">About Me</h1>
+            <div class="box">
+                <div>Hey, I am Bijay ! </div>
+                <div>a BCA student from Kathmandu, Nepal.</div>
+                <div>I aspire to become a Data Analyst.</div></p>
+                <hr border="1" color="black">
+                <p><b>Skills I do have :</b></p>
+                <div>
+                    <ui>
+                        <li>HTML and  CSS</li>
+                        <li>Computer Basics</li>
+                        <li>Phone Customization</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                    </ui>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="section">
+            <h1 class="text-blue">Services</h1>
+            <div class="box">
+                <h3>I offer :</h3>
+                <div>
+                    <ul>
+                        <li>iPhone Jailbreaking</li>
+                        <li>iPhone Unlocking</li>
+                        <li>iPhone Bypassing</li>
+                        <li>iPhone Customizing</li>
+                        <li>Contact me for HTML/CSS/PHP related work as well.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="hire" class="section">
+            <h1 class="text-blue">Contact me</h1>
+            <div class="box">
+                <p><a href="mailto: bijaykoirala003@gmail.com">Email me :</a></p>
+                <p><a href="tell:+9779746665541">Call me :</a></p>
+                <a href="https://wa.me/+9779746665541">Chat on WhatsApp :</a>
+            </div>
+        </section>
+    </main>
+    
+    <!--Making the foot section-->
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Bijay Personal Websites &copy; 2023</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="https://www.facebook.com/bij.ay.7965">
+                        <img src="facebook.png" alt="My Facebook" width="38px" height="38px"></a></li>
+                    <li><a href="https://github.com/bijay085">
+                        <img src="git.png" alt="My Git" width="38px" height="38px"></a></li>
+                    <li><a href="https://www.instagram.com/bijay_085/">
+                        <img src="insta.png" alt="My Insta" width="38px" height="38px"></a></li>
+                    <li><a href="https://www.linkedin.com/in/bijay-koirala-99237a253/">
+                        <img src="linkedin.png" alt="My linkedin" width="38px" height="38px"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
